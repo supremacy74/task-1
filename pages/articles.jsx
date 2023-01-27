@@ -17,16 +17,19 @@ const Articles = () => {
     return (
         <Wrapper>
             <Container>
-                <Heading priority={1}>Articles</Heading>
                 <div className={styles.posts}>
-                    {data.map((post) => {
-                        return (
-                            <div className={styles.post}>
-                                <Heading priority={5}>{post.title}</Heading>
-                                <p>{post.body}</p>
-                            </div>
-                        )
-                    })}
+                    {data ? (
+                        data.map((post) => {
+                            return (
+                                <div key={post.id} className={styles.post}>
+                                    <Heading priority={5}>{post.title}</Heading>
+                                    <p>{post.body}</p>
+                                </div>
+                            )
+                        })
+                    ) : (
+                        <p>Loading.</p>
+                    )}
                 </div>
             </Container>
         </Wrapper>

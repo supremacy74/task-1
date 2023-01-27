@@ -26,7 +26,7 @@ const Header = () => {
         } else {
             dispatch(setItems(unauthorized))
         }
-    }, [])
+    }, [isAuthorized])
 
     const items = useSelector((state) => state.nav.items)
 

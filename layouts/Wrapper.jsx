@@ -15,6 +15,7 @@ const Wrapper = ({ children }) => {
     const dispatch = useDispatch()
 
     useEffect(() => {
+        console.log(JSON.parse(localStorage.getItem('isAuthorized')))
         dispatch(
             setIsAuthorized(JSON.parse(localStorage.getItem('isAuthorized')))
         )

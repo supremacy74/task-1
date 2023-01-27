@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 
+import { useRouter } from 'next/router'
+
 import styles from '../styles/modules/Login.module.css'
 
 import { useSelector } from 'react-redux'
@@ -12,6 +14,15 @@ import Heading from '@/components/Heading'
 
 const Login = () => {
     const items = useSelector((state) => state.form.items)
+    const isAuthorized = useSelector((state) => state.form.isAuthorized)
+
+    const router = useRouter()
+
+    useEffect(() => {
+        if (isAuthorized) {
+            router.push('/profile')
+        }
+    }, [isAuthorized])
 
     return (
         <Wrapper>
