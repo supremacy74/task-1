@@ -1,0 +1,10 @@
+.wrapper {
+    background: var(--primary);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: fit-content(100px) 1fr fit-content(100px);
+}
+
+.main {
+    margin: 75px 0 100px;
+}

@@ -1,0 +1,17 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    min-height: 350px;
+    justify-content: space-between;
+    width: min(100%, 550px);
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.wrong {
+    color: var(--wrong);
+}
