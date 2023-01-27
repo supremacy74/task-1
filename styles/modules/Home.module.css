@@ -1,0 +1,37 @@
+.items {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.input {
+    position: relative;
+    padding: 15px 20px;
+    border-bottom: .025rem solid var(--secondary);
+    width: 100%;
+    margin: 50px 0;
+}
+
+.user {
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.user:hover {
+    background: var(--transparent-secondary-500);
+}
+
+@media (min-width: 992px) {
+    .items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

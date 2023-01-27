@@ -1,0 +1,13 @@
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    margin-top: 50px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: min(100%, 750px);
+}
