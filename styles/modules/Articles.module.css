@@ -1,13 +1,6 @@
-.posts {
-    display: flex;
-    flex-direction: column;
-    gap: 75px;
-    margin-top: 50px;
-}
-
-.post {
+.articles {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    width: min(100%, 750px);
+    padding: 50px 0;
 }
